@@ -1,4 +1,4 @@
-package by.htp.rom4b6.launch;
+package by.htp.stone.launch;
 
 /*
  * Создать консольное приложение, удовлетворяющее следующим требованиям:

@@ -1,4 +1,4 @@
-package by.htp.rom4b6.entity;
+package by.htp.stone.entity;
 
 public class Stone {
 	
