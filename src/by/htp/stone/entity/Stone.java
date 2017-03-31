@@ -7,8 +7,11 @@ public abstract class Stone {
 	private double cost;
 	private double transparency;
 	
-	public Stone() {
-		
+	public Stone(String name, double weight, double cost, double transparency) {
+		this.name = name;
+		this.weight = weight;
+		this.cost = cost;
+		this.transparency = transparency;
 	}
 	
 	public String getName() {
@@ -42,6 +45,12 @@ public abstract class Stone {
 	public void setTransparency(double transparency) {
 		this.transparency = transparency;
 	}
+
+	@Override
+	public String toString() {
+		return "Stone [name=" + name + ", weight=" + weight + ", cost=" + cost + ", transparency=" + transparency + "]\n";
+	}
+	
 	
 	
 }
