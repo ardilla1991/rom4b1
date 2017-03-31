@@ -1,6 +1,8 @@
 package by.htp.stone.entity;
 
-public abstract class Stone {
+import java.util.Comparator;
+
+public abstract class Stone implements Comparable<Stone>{
 	
 	private String name;
 	private double weight;
@@ -51,6 +53,15 @@ public abstract class Stone {
 		return "Stone [name=" + name + ", weight=" + weight + ", cost=" + cost + ", transparency=" + transparency + "]\n";
 	}
 	
-	
+    @Override
+    public int compareTo(Stone stn) {
+    	if ( this.weight > stn.weight ) {
+    		return 1;
+    	} else if ( this.weight < stn.weight ) {
+    		return -1;
+    	} else {
+    		return 0;
+    	}
+    }
 	
 }
